@@ -1,0 +1,14 @@
+:root {
+  --navbg: rgb(219, 170, 78);
+  --row: rgb(238, 201, 133);
+  --black: rgb(46, 46, 46);
+  --yellow: rgb(255, 198, 0);
+  --white: rgb(250, 246, 236);
+  --offWhite: rgb(237, 237, 237);
+  --grey: rgb(206, 201, 201);
+  --red: rgb(255, 73, 73);
+  --lightGrey: rgb(239, 239, 239);
+  --bs: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+  --maxWidth: 1906px;
+  --bg: rgba(239, 239, 239, 0.929);
+}

@@ -1,0 +1,50 @@
+{
+  "extends": [
+    "@abhijithvijayan/eslint-config/typescript",
+    "@abhijithvijayan/eslint-config/react"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "no-tabs": [
+          "error",
+          {
+            "allowIndentationTabs": true
+          }
+        ],
+        "arrowParens": "avoid",
+        "bracketSpacing": true,
+        "endOfLine": "lf",
+        "htmlWhitespaceSensitivity": "css",
+        "insertPragma": false,
+        "jsxBracketSameLine": true,
+        "jsxSingleQuote": false,
+        "printWidth": 88,
+        "proseWrap": "always",
+        "quoteProps": "as-needed",
+        "requirePragma": false,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "react/jsx-curly-spacing": "all"
+      }
+    ],
+    "no-console": 0,
+    "no-unused-vars": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/prop-types": 0,
+    "react/jsx-props-no-spreading": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "import/prefer-default-export": 0,
+    "no-use-before-define": 0,
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/no-non-null-assertion": 0,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0
+  }
+}
