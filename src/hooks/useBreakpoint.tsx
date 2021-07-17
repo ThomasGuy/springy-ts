@@ -36,14 +36,14 @@ const BreakpointProvider: React.FC<BreakpointProps> = ({ children, queries }) =>
       setQueryMatch(matches);
       isAttached = true;
       keys.forEach(media => {
-        mediaQueryLists[media].addListener(handleQueryListener);
+        mediaQueryLists[media].addEventListener('change', handleQueryListener);
       });
     }
 
     return () => {
       if (isAttached) {
         keys.forEach(media => {
-          mediaQueryLists[media].removeListener(handleQueryListener);
+          mediaQueryLists[media].removeEventListener('change', handleQueryListener);
         });
       }
     };
